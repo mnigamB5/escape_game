@@ -1,2 +1,2 @@
 # escape_game
-Fantasy escape room style game 
+Scrapbook Escape Room Game 
