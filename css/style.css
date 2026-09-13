@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: #3f352c;
+}
+
+
+/* --------------------
+   SCREEN SYSTEM
+-------------------- */
+
+.screen {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+.screen.active {
+  display: flex;
+}
+
+
+/* --------------------
+   HOME SCREEN
+-------------------- */
+
+#home-screen {
+  justify-content: center;
+  align-items: center;
+}
+
+.home-card {
+  background-color: #f2e8d5;
+
+  padding: 60px;
+
+  text-align: center;
+
+  border-radius: 5px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.home-card h1 {
+  margin-top: 0;
+}
+
+.home-card button {
+  padding: 12px 24px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+
+/* --------------------
+   SCRAPBOOK SCREEN
+-------------------- */
+
+#scrapbook-screen {
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* the entire open scrapbook */
+
+.scrapbook {
+  width: 900px;
+  max-width: 90vw;
+
+  height: 550px;
+  max-height: 75vh;
+
+  background-color: #d6c3a5;
+
+  padding: 20px;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+
+/* current scrapbook page */
+
+#page-container {
+  width: 100%;
+  height: 100%;
+
+  background-color: #f6eddc;
+
+  padding: 40px;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+
+/* example page content */
+
+.page-title {
+  margin-top: 0;
+}
+
+.page-date {
+  color: #8b3a2d;
+
+  font-size: 14px;
+}
+
+.page-image {
+  width: 250px;
+  height: 180px;
+
+  background-color: #cfc6b6;
+
+  border: 8px solid white;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+
+/* --------------------
+   PAGE CONTROLS
+-------------------- */
+
+.page-controls {
+  margin-top: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+}
+
+.page-controls button {
+  padding: 8px 14px;
+
+  cursor: pointer;
+}
+
+.page-controls button:disabled {
+  opacity: 0.4;
+
+  cursor: default;
+}
+
+#page-number {
+  color: white;
+}
