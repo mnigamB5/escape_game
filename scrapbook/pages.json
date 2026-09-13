@@ -1,3 +1,22 @@
-{
-    "note": "This will be the data for each scrapbook page. Each page will have image refs, unlock conditions, clues, etc."
-}
+[
+  {
+    "id": "page-1",
+    "date": "June 12",
+    "caption": "The First Page",
+    "note": "Something about this scrapbook feels strangely familiar."
+  },
+
+  {
+    "id": "page-2",
+    "date": "June 13",
+    "caption": "The Photograph",
+    "note": "You don't remember taking this photo."
+  },
+
+  {
+    "id": "page-3",
+    "date": "June 14",
+    "caption": "Something Changed",
+    "note": "Was there always one fewer person in this picture?"
+  }
+]
